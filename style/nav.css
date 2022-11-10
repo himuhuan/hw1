@@ -1,0 +1,56 @@
+/* 
+ * 通用导航栏
+ * ------------------------------------------------------
+ * 代码参考了部分网络文献
+ */
+
+* {
+    margin: auto;
+}
+
+.logo {
+    margin-left: 0px;
+    margin-right: 10px;
+    float: left;
+}
+
+.nav {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: max-content;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: brown;
+}
+
+.nav-right-button {
+    float: right;
+}
+
+.active {
+    text-decoration: underline;
+    background-color: crimson;
+}

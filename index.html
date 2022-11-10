@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./style/home.css" />
+    <link rel="stylesheet" type="text/css" href="./style/nav.css" />
+
     <title> Homework #1 for Web Basic Course </title>
 </head>
-<body>
-    <p> Hello, github! </p>
+
+<body class="himu-theme">
+    <div class="nav" id="head">
+        <img class="logo" src="./image/MyLogo.png" alt="Logo" width="180" height="50">
+        <ul>
+            <li><a class="active" href="./index.html"> 主页</a></li>
+            <li><a href="./pages/Error/NotFound.html"> 技术类博客 </a> </li>
+            <li><a href="./pages/Error/NotFound.html"> 杂记 </a> </li>
+            <li> <a href="https://github.com/himuhuan"> My Github </a> </li>  
+
+            <!-- why I cannot use extern css file? see the style/nav.css-->
+            <!-- wrong!! -->
+            <!-- <li class="nav-right-button"> <a href="#About"> About </a> </li> -->
+            <li style="float: right"> <a href="#About"> 注册 </a> </li>
+        </ul>
+    </div>
+
+    <div class="welcome">
+        <h1> Hello, Github! </h1>
+    </div> 
+
 </body>
+
 </html>
