@@ -1,0 +1,87 @@
+.register_form {
+    margin-left:35%;
+    margin-right: 35%;
+    width: 30%;
+    word-wrap: break-word;
+    overflow: hidden;
+    color: whitesmoke;
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(43, 43, 43);
+    opacity: 0.8;
+    font-size: larger;
+}
+
+.register_form h2 {
+    text-align: center;
+}
+
+.register_form .checkbox-label  {
+    color: darkgray;
+    font-size: smaller;
+}
+
+.register_form input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.register_form input[type=submit] {
+    width: 30%;
+    float: right;
+    background-color: crimson;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.register_form input[type=submit]:hover {
+    background-color: darkred;
+}
+
+.verify-aera {
+    width: 100%;
+    overflow: hidden;
+}
+
+.verify-aera input[type=text] {
+    display: inline;
+    width: 60%;
+}
+
+.verify-aera label {
+    display: block;
+}
+
+.verify-aera input[type=button] {
+    width: 30%;
+    float: right;
+    background-color: crimson;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sex-radio {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sex-radio label {
+    margin-right: 20%;
+}

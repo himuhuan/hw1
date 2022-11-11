@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Himu の 半吊子技术随笔记录：新时代Windows开发环境搭建 </title>
+
+    <link rel="stylesheet" type="text/css" href="/style/home.css" />
+    <link rel="stylesheet" type="text/css" href="/style/user.css" />
+    <link rel="stylesheet" type="text/css" href="/style/nav.css" />
+
+    <link rel="shortcut icon" href="/image/ico/Home.ico" />
+</head>
+<body class="himu-theme">
+    <div class="nav" id="nav-line">
+        <img class="logo" src="/image/MyLogo-Black.png" alt="Logo" width="180" height="50">
+        <ul>
+            <li><a href="/index.html"> 主页</a></li>
+            <li><a href="/pages/Tech/develop-in-newest-windows.html" class="active"> 技术类博客 </a> </li>
+            <li><a href="/pages/Error/NotFound.html"> 杂记 </a> </li>
+            <li><a href="https://github.com/himuhuan" rel=noopener target="_blank"> My Github </a> </li>
+            <li style="float: right"> <a href="/pages/User/Register.html"> 注册 </a> </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        
+        <div class="content-image">
+        <img src="/image/WindowsOverview.png" alt="结果预览"/>
+        </div>
+        
+        <img class="user-profile-middle" src="/image/AdminProfile.png" alt="AdminProfile" />
+        
+        <div>
+            <h2> 士别三日：现在在Windows开发还是如此不堪吗？ </h2>
+            <hr>
+            <p> 发布者：<i>Himu</i> </p>
+        </div>
+
+        <div class="clear-style"></div>
+        <h2> 前言 </h2>
+        <p>
+            众所周知，Windows因为包管理，第三方库安装复杂等问题被各路开发者（尤其是非C#系）所不屑，
+            并纷纷转投Linux，或者Mac OS等其他操作系统。
+        </p>
+        <p>
+            然而，今非昔比，现如今Microsoft的策略向开源靠拢。现在的Windows有着许多不被许多程序员所知的工具，
+            在经过适当的调教后，笔者个人认为整体的开发体验不逊于Unix系。
+        </p>
+
+        <h2> 终端配置 </h2>
+        <p>
+            在以前，Windows 最为人诟病的便是糟糕的命令行体验。现在，令人欣慰的是，
+            微软官方已在最新的Windows上内置了现代的Terminal程序。
+            搜索 Terminal 即可打开它，你可以在设置里将其设为默认Terminal程序，告别丑陋的cmd.exe!
+        </p>
+        <div class="content-image">
+            <img src="/image/TerminalLogo.png" alt="结果预览"/>
+            <p> Windows Terminal 默认状态，可以看到它支持多标签页，快捷命令等现代终端功能 </p>
+        </div>
+        <p> 
+            说真的，这是一款令人惊艳的 Terminal 程序，尝试靠
+            <a href="https://learn.microsoft.com/en-us/windows/terminal/custom-terminal-gallery/custom-schemes"> 
+            官方文档 </a> 配置它。
+            依靠PowerShell本身强大的包管理，可以很轻松装上在Linux/Mac上熟悉的Powerline，并且将个性最大化！
+        </p>
+        <div class="content-image">
+            <img src="/image/WindowsTerminalGitWork.png" alt="Git结果预览"/>
+            <p> 本项目在Terminal内使用git中的预览，可以看到 Powerline 对 git 有着良好的支持</p>
+        </div>
+
+        <h2> 包管理器 --- 以 Scoop 为例 </h2>
+        <p> 
+            说起配置 Windows 的开发环境 --- 这有时真的是一场噩梦，但是现在，许多第三方都为 Windows 提供了包管理支持。
+            下表罗列了常见可用的包管理与其特色。
+        </p>
+
+        <table>
+            <caption> 常见包管理器汇总 </caption>
+            <thead> <tr>
+                <th> 名称 </th>
+                <th> 提供商 </th>
+                <th> 与 Windows 生态对接 </th>
+                <th> 可扩展性 </th>
+            </tr> </thead>
+            <tbody>
+                <tr>
+                    <td> Scoop </td>
+                    <td> 开源社区 </td>
+                    <td rowspan="2"> 一般 </td>
+                    <td> 好 </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"> Chocolatey </td>
+                    <td> 一般 </td>
+                </tr>
+
+                <tr>
+                    <td> Winget </td>
+                    <td> 微软 </td>
+                    <td> 好 </td>
+                    <td> 一般 </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p> 
+            读者可以根据需求选择, 笔者使用的是 <a href="https://scoop.sh/"> scoop </a>. 
+            如图所示，再配置后安装程序是一件很简单的事情，scoop 也会默认配置环境变量
+        </p>
+        <div class="content-image">
+            <img src="/image/ScoopExample.png" alt="Scoop" />
+        </div>
+
+        <h2> 库管理 --- vcpkg </h2>
+        <p> 
+            以前，Windows上处理 C/C++ 第三方库依赖也是棘手的问题，同样的，微软现在意识到了这一点，
+            并推出了 vcpkg 处理这个问题，而且 vcpkg 与 Visual Studio 有着友好的集成性，详情参见
+            <a href="https://vcpkg.io/en/index.html"> vcpkg 官网 </a>
+        </p>
+
+        <hr> <br>
+        <b> 版权所有(c) 2022 LiuHuan, Only for Education & Study </b>
+    </div>
+
+</body>
+
+</html>

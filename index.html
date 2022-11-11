@@ -4,34 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="./style/home.css" />
-    <link rel="stylesheet" type="text/css" href="./style/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/style/home.css" />
+    <link rel="stylesheet" type="text/css" href="/style/user.css" />
+    <link rel="stylesheet" type="text/css" href="/style/nav.css" />
 
+    <link rel="shortcut icon" href="/image/ico/Home.ico" />
     <title> Homework #1 for Web Basic Course </title>
+
 </head>
 
 <body class="himu-theme">
-    <div class="nav" id="head">
-        <img class="logo" src="./image/MyLogo.png" alt="Logo" width="180" height="50">
+    <div class="nav" id="nav-line">
+        <img class="logo" src="/image/MyLogo-Black.png" alt="Logo" width="180" height="50">
         <ul>
-            <li><a class="active" href="./index.html"> 主页</a></li>
-            <li><a href="./pages/Error/NotFound.html"> 技术类博客 </a> </li>
-            <li><a href="./pages/Error/NotFound.html"> 杂记 </a> </li>
-            <li> <a href="https://github.com/himuhuan"> My Github </a> </li>  
+            <li><a href="/index.html" class="active"> 主页</a></li>
+            <li><a href="/pages/Tech/develop-in-newest-windows.html"> 技术类博客 </a> </li>
+            <li><a href="/pages/Error/NotFound.html"> 杂记 </a> </li>
+            <!-- why rel=noopener here？ -->
+            <li><a href="https://github.com/himuhuan" rel=noopener target="_blank"> My Github </a> </li>
 
             <!-- why I cannot use extern css file? see the style/nav.css-->
             <!-- wrong!! -->
             <!-- <li class="nav-right-button"> <a href="#About"> About </a> </li> -->
-            <li style="float: right"> <a href="#About"> 注册 </a> </li>
+            <li style="float: right"> <a href="/pages/User/Register.html"> 注册 </a> </li>
         </ul>
     </div>
 
     <div class="welcome">
         <h1> Hello, Github! </h1>
-    </div> 
+        <h5> 欢迎您的到来，希望您在本站度过一段美好的时光！ </h5>
+    </div>
 
+    <div class="content">
+        <img class="user-profile-middle" src="/image/AdminProfile.png" alt="AdminProfile" />
+        <div>
+            <h2> 是的, 这是我的第一份Web作业 </h2>
+            <hr>
+            <p> 下滑以阅读关于此网站的更多信息 </p>
+        </div>
+        <div class="clear-style"></div>
+        <h2> 此网站的关键说明 </h2>
+
+        <h3> 样式参考 </h3>
+        <p>
+            本网站主要参考了知乎(<a href="https://www.zhihu.com"> zhihu.com </a>)专栏的设计，并且将主题色设为
+            #333333 和 crimson 色，使得网页更加护眼且个性。
+        </p>
+        <div class="content-image">
+            <img src="image/ZhihuSnip.png" alt="Zhihu截图" />
+            <p> 知乎专栏 </p>
+        </div>
+
+        <p> 本站中文显示大量使用了来自 <i>Microsoft</i> 的等线字体, 所以理论上可以在Windows上取得最佳效果。
+            相应的，我们也考虑了其它系统并准备了备用字体。
+            遗憾的是，我们对移动端的适配并不理想，建议使用PC/Mac进行访问。</p>
+        <div class="content-image">
+            <img src="/image/WebsiteOverview.png" alt="Overview">
+            <p> 本网站的理想显示状态，以1920*1080分辨率在 Windows 11 + Edge 上运行 </p>
+        </div>
+
+        <h3> 作业完成说明 </h3>
+        <p> 我们通过一种自然的方式来完成作业，通常我们完成一个较为完整的网站，提供其它页面与文本，在其中完成作业的任务。</p>
+        <p> <b> 注意！为了保证页面美观以及内容的自然，作业提到的具体细节可能会被忽略或被其它内容替代！ </b> </p>
+        <p>
+            特别地，以下任务已在本页面中完成：
+        <ol>
+            <li>
+                列表
+                <ul>
+                    <li> 无序列表 </li>
+                    <li> 有序列表 </li>
+                    <li> 列表嵌套 </li>
+                </ul>
+            </li>
+            <li>
+                超链接
+                <ul>
+                    <li> 跳转至外部网站 --- 导航栏：Github，正文文本 </li>
+                    <li> 跳转到本地网页 --- 导航栏：其它按钮 </li>
+                    <li> 跳转到 <a href="#nav-line"> 锚点 </a> (返回到页面开始处) </li>
+                </ul>
+            </li>
+            <li> 图片 </li>
+        </ol>
+        </p>
+
+        <p> 表单相关内容在“注册”页面中体现，而表格内容则在“技术类博客”中体现。 </p>
+        <hr>
+    </div>
+
+    <div class="page-end">
+        <p> 版权所有（c）2022 "Himu" (mmpliuhuan@outlook.com) </p>
+    </div>
 </body>
 
 </html>
