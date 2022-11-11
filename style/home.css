@@ -19,7 +19,7 @@
 .welcome {
     width: 100%;
     height: 450px;
-    background: url("/image/welcome.png") no-repeat;
+    background: url("../image/welcome.png") no-repeat;
     background-size: cover;
     text-align: center;
     overflow: hidden;
