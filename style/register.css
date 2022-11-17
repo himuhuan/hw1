@@ -77,6 +77,10 @@
     cursor: pointer;
 }
 
+.verify-aera input[type=button]:hover {
+    background-color: darkred;
+}
+
 .sex-radio {
     margin-top: 5px;
     margin-bottom: 5px;
